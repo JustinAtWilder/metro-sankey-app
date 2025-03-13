@@ -1,4 +1,4 @@
-export const sankeyData = {
+export const nursingData = {
   type: 'sankey',
   orientation: 'h',
   valueformat: '',

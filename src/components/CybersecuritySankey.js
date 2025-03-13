@@ -1,8 +1,8 @@
 import Plotly from "plotly.js-dist";
 import React, { useEffect } from "react";
-import { sankeyData } from "../data/sankeyData"; // Import the data
+import { cybersecurityData } from "../data/cybersecurityData"; // Import the data
 
-const SankeyTest = () => {
+const CybersecuritySankey = () => {
   useEffect(() => {
     const graphDiv = document.getElementById("sankey");
     if (graphDiv) {
@@ -100,7 +100,7 @@ const SankeyTest = () => {
           ]
         };
 
-        Plotly.react(graphDiv, [sankeyData], layout, {displayModeBar: false});
+        Plotly.react(graphDiv, [cybersecurityData], layout, {displayModeBar: false});
       };
 
       // Initial render
@@ -117,4 +117,4 @@ const SankeyTest = () => {
   return <div id="sankey" className="sankey-container"></div>;
 };
 
-export default SankeyTest;
+export default CybersecuritySankey;
