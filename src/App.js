@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Sankey from './components/Sankey';
 import NursingSankey from './components/NursingSankey';
 import AccountingSankey from './components/AccountingSankey';
 import CybersecuritySankey from './components/CybersecuritySankey';
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
           <Router>
       <Routes>
+        <Route path="/" element={<Sankey />} />
         <Route path="/nursing" element={<NursingSankey />} />
         <Route path="/accounting" element={<AccountingSankey />} />
         <Route path="/cybersecurity" element={<CybersecuritySankey />} />
