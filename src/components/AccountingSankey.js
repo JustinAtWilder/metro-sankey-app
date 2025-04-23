@@ -31,6 +31,7 @@ const AccountingSankey = () => {
                 color: "white",
                 width: 0.7
               },
+
             },
             link: {
               colorscale: "YlGnBu"
