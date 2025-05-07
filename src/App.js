@@ -7,6 +7,7 @@ import AccountingSankey from './components/AccountingSankey';
 import CybersecuritySankey from './components/CybersecuritySankey';
 import MentalHealthPractitionerSankey from './components/MentalHealthPractitionerSankey';
 import EducationSankey from './components/EducationSankey';
+import RadialBarChart from './components/RadialBarChart';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
         <Route path="/cybersecurity" element={<CybersecuritySankey />} />
         <Route path="/mental-health-practitioner" element={<MentalHealthPractitionerSankey />} />
         <Route path="/education" element={<EducationSankey />} />
-      </Routes>
+        <Route path="/radial-bar-chart" element={<RadialBarChart />} />
+            </Routes>
     </Router>
     </div>
   );
