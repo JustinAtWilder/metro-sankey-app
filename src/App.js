@@ -8,6 +8,7 @@ import CybersecuritySankey from './components/CybersecuritySankey';
 import MentalHealthPractitionerSankey from './components/MentalHealthPractitionerSankey';
 import EducationSankey from './components/EducationSankey';
 import RadialBarChart from './components/RadialBarChart';
+import CareerCompetencies from './components/CareerCompetencies';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/mental-health-practitioner" element={<MentalHealthPractitionerSankey />} />
         <Route path="/education" element={<EducationSankey />} />
         <Route path="/radial-bar-chart" element={<RadialBarChart />} />
+        <Route path="/career-competencies" element={<CareerCompetencies />} />
             </Routes>
     </Router>
     </div>

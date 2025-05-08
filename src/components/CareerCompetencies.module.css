@@ -1,0 +1,117 @@
+/* CareerCompetencies.module.css */
+/* Scoped styles for the Career Competencies component */
+
+.careerCompetenciesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #082131;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+
+.competenciesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);;
+  gap: 8px;
+  justify-content: center; /* Center the grid horizontally */
+  align-content: center; /* Center the grid vertically */
+
+}
+
+/* Media queries for responsive grid layout */
+@media (min-width: 640px) {
+  .competenciesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .competenciesGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.competencyContainer {
+  position: relative;
+}
+
+.competencyCard {
+  padding: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  max-width: 200px;
+  min-height: 80px;
+}
+
+.competencyCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.competencyCardExpanded {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.competencyTitle {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.competencyTooltip {
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  width: 300px;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  cursor: pointer; /* Add pointer cursor to indicate clickable */
+}
+
+.tooltipContent {
+  font-size: 14px;
+}
+
+.tooltipTitle {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tooltipList {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tooltipList li {
+  font-weight: 200;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 32px;
+}
+
+/* Add a modal backdrop with blur effect */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(8, 33, 49, 0.7); /* Semi-transparent background matching container color */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(5px); /* For Safari */
+  z-index: 999;
+  cursor: pointer; /* Indicates clickable area to dismiss */
+}
