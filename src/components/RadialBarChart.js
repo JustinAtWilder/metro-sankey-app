@@ -104,15 +104,6 @@ const RadialBarChart = () => {
         maxWidth: "1920px",
       }}
     >
-      <h1
-        style={{
-          textAlign: "center",
-          marginBottom: "20px",
-          marginRight: "200px",
-        }}
-      >
-        Metro State Students
-      </h1>
       <div
         id="main-chart"
         style={{
