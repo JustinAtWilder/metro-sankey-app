@@ -14,11 +14,11 @@ export const nursingData = {
       'Biology', 'Human Resource Management', 'Human Services', 'Individualized Studies', 
       'Liberal Arts', 'Nursing', 'Nursing Practice', 'Nursing Science', 'Social Science',
       // Internships
-      'Did an Internship', 'No intership', 'Not sure',
+      'intern', 'not intern', 'not sure',
       //Industry
       'Healthcare and<br>Social Assistance', 'Educational Services', 'Other',
       //Job lvel
-      'Entry Level', 'First Level Management', 'Middle Level Management', 'Intermediate or<br>Experienced Level', 'Senior, Executive or<br>Top Level Management',
+      'Entry Level jobs', 'First Level Management jobs', 'Middle Level Management jobs', 'Intermediate or<br>Experienced Level jobs', 'Senior, Executive or<br>Top Level Management jobs',
       // Job title
       'Care Coordinator', 'Community Paramedic', 'Critical Care Nurse Practitioner', 'Emergency Medical<br>Services Team Manager', 'Doula', 'Graduate Pharmacist Intern', 'Healthcare Worker', 'Nurse', 'Nurse Anesthetist', 'Nurse Practitioner', 'Public Health Nurse', 'Registered Nurse', 'RN and Clinical Educator', 'RN, BSN, PHN, SANE-A', 'Senior Health Coach',
 
@@ -31,6 +31,7 @@ export const nursingData = {
       '#C6612D', '#006275', '#C6612D', '#C6612D', '#006275',
       '#006275', '#006275', '#C6612D', '#006275', '#006275', '#006275', '#006275', '#C6612D', '#C6612D',  '#C6612D', '#C6612D', '#C6612D', '#C6612D', '#C6612D', '#006275', '#006275',
     ],
+    hovertemplate: '<span style="text-transform: none">%{value} %{label} alumni</span> <extra></extra>',
   },
   link: {
     source: [
@@ -98,6 +99,7 @@ export const nursingData = {
       '#D3D3D380', '#D3D3D380', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080', '#FCB44080',
       '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#FCB44080', '#D3D3D380', '#FCB44080', '#D3D3D380', '#D3D3D380', '#D3D3D380',
       '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#FCB44080', '#FCB44080', '#D3D3D380', '#D3D3D380', '#FCB44080', 
-    ]
+    ],
+    hovertemplate: '<span style="text-transform: none">%{value} %{source.label} alumni went on to %{target.label}</span> <extra></extra>',
   }
 };

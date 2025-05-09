@@ -25,7 +25,7 @@ const NursingSankey = () => {
           paper_bgcolor: "transparent", // Set the background color of the entire plot
           plot_bgcolor: "transparent", // Set the background color of the plotting area
           sankey: {
-            node: {
+              node: {
               thickness: 20,
               line: {
                 color: "white",
@@ -33,7 +33,8 @@ const NursingSankey = () => {
               },
             },
             link: {
-              colorscale: "YlGnBu"
+              colorscale: "YlGnBu",
+
             }
           },
           annotations: [
@@ -45,7 +46,7 @@ const NursingSankey = () => {
               text: 'Majors',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -57,7 +58,7 @@ const NursingSankey = () => {
               text: 'Internships',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -69,7 +70,7 @@ const NursingSankey = () => {
               text: 'Industry',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -81,7 +82,7 @@ const NursingSankey = () => {
               text: 'Job Level',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -93,7 +94,7 @@ const NursingSankey = () => {
               text: 'Job title',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             }

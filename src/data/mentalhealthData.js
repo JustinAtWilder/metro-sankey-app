@@ -14,7 +14,7 @@ export const mentalhealthData = {
       'Alcohol and<br>Drug Counseling', 'Human Services', 'Individualized Studies',
       'Nursing', 'Professional Communication', 'Psychology', 'Social Work',
       // Internships
-      'Did an Internship', 'No intership',
+      'intern', 'not intern',
       //Industry
       'Healthcare and<br>Social Assistance', 'Other', 'Religious, Grantmaking,<br>Civic, Professional, and<br>Similar Organizations',
       //Job level
@@ -30,7 +30,8 @@ export const mentalhealthData = {
       '#12743C', '#12743C', '#12743C', 
       '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#12743C', '#006275',
     ],
-  },
+    hovertemplate: '<span style="text-transform: none">%{value} %{label} alumni</span> <extra></extra>',
+   },
   link: {
     source: [
       0, 1, 2, 3, 4, 5, 6, 
@@ -61,6 +62,7 @@ export const mentalhealthData = {
       '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', 
       '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080',   
       '#78BE2080', '#D3D3D380', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080', '#78BE2080',
-    ]
-  }
+    ],
+    hovertemplate: '<span style="text-transform: none">%{value} %{source.label} alumni went on to %{target.label}</span> <extra></extra>',
+  },
 };

@@ -45,7 +45,7 @@ const EducationSankey = () => {
               text: 'Majors',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -57,7 +57,7 @@ const EducationSankey = () => {
               text: 'Internships',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -69,7 +69,7 @@ const EducationSankey = () => {
               text: 'Industry',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -81,7 +81,7 @@ const EducationSankey = () => {
               text: 'Job Level',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -93,7 +93,7 @@ const EducationSankey = () => {
               text: 'Job title',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             }

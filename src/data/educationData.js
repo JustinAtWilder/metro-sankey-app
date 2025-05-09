@@ -15,7 +15,7 @@ export const educationData = {
         'Individualized Studies', 'Liberal Arts', 'Public and Nonprofit<br>Administration', 'Technical Communication', 'Technical Communication<br>and Professional Writing',
         'Urban Elementary Education',
         // Internships
-        'Did an Internship', 'No intership',
+        'intern', 'not intern',
         //Industry
         'Educational Services', 'Manufacturing',
         //Job lvel
@@ -31,6 +31,7 @@ export const educationData = {
         '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD',
         '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#4D97AD', '#006275', '#4D97AD', '#4D97AD',
         ],
+    hovertemplate: '<span style="text-transform: none">%{value} %{label} alumni</span> <extra></extra>',
     },
     link: {
       source: [
@@ -89,6 +90,7 @@ export const educationData = {
         '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590',
         '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#00627580', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590',
         '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#00627580', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#00627580', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590', '#D5EBF590',
-      ]
-    }
+      ],
+      hovertemplate: '<span style="text-transform: none">%{value} %{source.label} alumni went on to %{target.label}</span> <extra></extra>',
+    },
   };

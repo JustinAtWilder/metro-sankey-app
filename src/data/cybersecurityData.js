@@ -15,7 +15,7 @@ export const cybersecurityData = {
         'Creative Writing', 'Criminal Justice', 'Individualized Studies','Management Information Systems', 'Marketing', 
         'Philosophy', 'Technical Communication', 'Urban Elementary Education',
         // Internships (2; 13:14)
-        'Did an Internship', 'No intership',
+        'intern', 'not intern',
         //Industry (10; 15:24)
         'Arts, Entertainment, and Recreation', 'Educational Services', 'Finance and Insurance', 'Information and Data', 'Management of<br>Companies and Enterprises',
          'Manufacturing', 'Other', 'Professional, Scientific,<br>and Technical Services', 'Public Administration', 'Retail and Wholesale Trade',
@@ -38,6 +38,7 @@ export const cybersecurityData = {
                   
 
          ],
+    hovertemplate: '<span style="text-transform: none">%{value} %{label} alumni</span> <extra></extra>',
     },
     link: {
       source: [0,1,2,3,4,5,6,7,8,9,10,11,12,
@@ -133,6 +134,7 @@ value: [
         '#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180',
         '#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180',
 
-      ]
-    }
+      ],
+      hovertemplate: '<span style="text-transform: none">%{value} %{source.label} alumni went on to %{target.label}</span> <extra></extra>',
+    },
   };

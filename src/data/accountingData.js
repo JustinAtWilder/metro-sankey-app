@@ -13,7 +13,7 @@ export const accountingData = {
         // Majors (0:9)
         'Accounting', 'Business Administration', 'English', 'Finance', 'History', 'International Business', 'Liberal Studies', 'Management', 'Public and Nonprofit Administration', 'Social Work',
         // Internships (10:12)
-        'Did an Internship', 'No intership', 'Not sure',
+        'intern', 'not intern', 'not sure',
         //Industry (13:22)
         'Finance and Insurance', 'Healthcare and Social Assistance', 'Information and Data', 'Manufacturing', 'Other', 'Professional, Scientific and Technical Services', 'Public Administration', 'Retail and Wholesale Trade', 'Telecommunications', 'Utilities',
         //Job level (23:26)
@@ -29,7 +29,8 @@ export const accountingData = {
         '#7932a8','#7932a8','#7932a8','#7932a8',
         '#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8','#7932a8',
         ],
-    },
+    hovertemplate: '<span style="text-transform: none">%{value} %{label} alumni</span> <extra></extra>',
+     },
     link: {
       source: [
        0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
@@ -210,5 +211,6 @@ export const accountingData = {
         '#FF1DCE80','#FF1DCE80','#FF1DCE80','#FF1DCE80',
         
           ],
-    }
+      hovertemplate: '<span style="text-transform: none">%{value} %{source.label} alumni went on to %{target.label}</span> <extra></extra>',
+    },
   };
