@@ -13,6 +13,7 @@
     "apexcharts": "^4.7.0",
     "chart.js": "^4.4.9",
     "framer-motion": "^12.10.4",
+    "gridjs": "^6.2.0",
     "plotly.js-dist": "^3.0.1",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",
