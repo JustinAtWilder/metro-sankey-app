@@ -8,7 +8,6 @@ import MentalHealthPractitionerSankey from './components/MentalHealthPractitione
 import EducationSankey from './components/EducationSankey';
 import RadialBarChart from './components/RadialBarChart';
 import CareerCompetencies from './components/CareerCompetencies';
-import FieldOfStudy from './components/FieldOfStudy';
 import FieldOfStudyPage from "./components/FieldOfStudyPage";
 import "@fontsource/montserrat";
 import "@fontsource/montserrat/500.css";
@@ -38,7 +37,6 @@ function App() {
         <Route path="/education" element={<EducationSankey />} />
         <Route path="/radial-bar-chart" element={<RadialBarChart />} />
         <Route path="/career-competencies" element={<CareerCompetencies />} />
-        <Route path="/field-of-study" element={<FieldOfStudy />} />
         <Route path="/tables" element={<FieldOfStudyPage />} />
 
             </Routes>
