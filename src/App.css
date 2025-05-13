@@ -26,6 +26,7 @@
 /* Optionally, reduce font size for table headers */
 .gridjs .gridjs-th {
   font-size: 14px; /* Adjust the font size for headers */
+  border: #e2e3dc 1px solid;
 }
 
 .gridjs .gridjs-footer {

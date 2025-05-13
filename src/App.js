@@ -1,5 +1,4 @@
 import './App.css';
-import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Sankey from './components/Sankey';
 import NursingSankey from './components/NursingSankey';
@@ -10,7 +9,21 @@ import EducationSankey from './components/EducationSankey';
 import RadialBarChart from './components/RadialBarChart';
 import CareerCompetencies from './components/CareerCompetencies';
 import FieldOfStudy from './components/FieldOfStudy';
+import FieldOfStudyPage from "./components/FieldOfStudyPage";
+import "@fontsource/montserrat";
+import "@fontsource/montserrat/500.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/montserrat/700.css";
 
+// Add a global style for gridjs to use Montserrat
+const style = document.createElement('style');
+style.textContent = `
+  .gridjs-wrapper, .gridjs-table, .gridjs-th, .gridjs-td, 
+  .gridjs-search-input, .gridjs-pagination {
+    font-family: 'Montserrat', sans-serif !important;
+  }
+`;
+document.head.appendChild(style);
 
 function App() {
   return (
@@ -26,6 +39,8 @@ function App() {
         <Route path="/radial-bar-chart" element={<RadialBarChart />} />
         <Route path="/career-competencies" element={<CareerCompetencies />} />
         <Route path="/field-of-study" element={<FieldOfStudy />} />
+        <Route path="/tables" element={<FieldOfStudyPage />} />
+
             </Routes>
     </Router>
     </div>

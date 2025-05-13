@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { Grid } from "gridjs";
-import "gridjs/dist/theme/mermaid.css"; // Import Grid.js styles
 import "@fontsource/montserrat/700.css";
 
 const FieldOfStudy = () => {
