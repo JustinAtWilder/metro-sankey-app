@@ -11,6 +11,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   overflow: hidden; /* Prevent overflow */
+  z-index: -1;
 }
 
 .gridjs .gridjs-table {
@@ -39,6 +40,7 @@
   align-items: center;
   background-color: #082131; /* Dark blue background */
   overflow: auto; /* Allow scrolling if content overflows */
+  z-index: 1; /* Ensure it is above the background */
 }
 
 @media (prefers-reduced-motion: no-preference) {

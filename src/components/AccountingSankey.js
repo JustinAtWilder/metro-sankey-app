@@ -10,11 +10,10 @@ const AccountingSankey = () => {
       const updatePlot = () => {
         const layout = {
           width: window.innerWidth, // Make this responsive to your container
-          height: 500,
+          height: window.innerHeight * 0.9, // Adjust height as needed
           font: {
             size: 10,
             color: "white",
-            textcase: "word caps",
           },
           margin: {
             l: 20,
@@ -46,7 +45,7 @@ const AccountingSankey = () => {
               text: 'Majors',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -58,7 +57,7 @@ const AccountingSankey = () => {
               text: 'Internships',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -70,7 +69,7 @@ const AccountingSankey = () => {
               text: 'Industry',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -82,7 +81,7 @@ const AccountingSankey = () => {
               text: 'Job Level',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             },
@@ -94,7 +93,7 @@ const AccountingSankey = () => {
               text: 'Job title',
               showarrow: false,
               font: {
-                size: 11,
+                size: 16,
                 color: 'white'
               }
             }

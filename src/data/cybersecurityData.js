@@ -1,140 +1,119 @@
 export const cybersecurityData = {
-    type: 'sankey',
-    orientation: 'h',
-    valueformat: '',
-    node: {
-      pad: 5,
-      thickness: 30,
-      line: {
-        color: '#D3D3D380',
-        width: 0.5
-      },
-      label: [
-        // Majors (13; 0:12)
-        'Accounting', 'Biology', 'Computer Information Systems', 'Computer Information Technology', 'Computer Science', 
-        'Creative Writing', 'Criminal Justice', 'Individualized Studies','Management Information Systems', 'Marketing', 
-        'Philosophy', 'Technical Communication', 'Urban Elementary Education',
-        // Internships (2; 13:14)
-        'intern', 'not intern',
-        //Industry (10; 15:24)
-        'Arts, Entertainment, and Recreation', 'Educational Services', 'Finance and Insurance', 'Information and Data', 'Management of<br>Companies and Enterprises',
-         'Manufacturing', 'Other', 'Professional, Scientific,<br>and Technical Services', 'Public Administration', 'Retail and Wholesale Trade',
-        //Job level (4; 25:28)
-        'Entry Level', 'First Level Management', 'Intermediate or<br>Experienced Level', 'Middle Level Management', 
-        // Job title (18; 29:46)
-        "Application Analyst",	"Application Developer",	"Application Programmer",	"Content Designer",	"Customs and Border Protection Officer",	
-        "Data Coordinator",	"Data Manager",	"Lead JavaScript Engineer",	"Network Analyst",	"Ops manager",	"Principal Data Scientist",	
-        "Senior Business Software Analyst",	"Senior software engineer",	"Senior Systems Analyst",	"Software Developer",	"Software Engineer",	
-        "Software Engineer II",	"Systems Architect/Solution Architect",
-
+  type: 'sankey',
+  orientation: 'h',
+  valueformat: '',
   
-          ],
-          // Node colors
-          color: ['#006275','#006275','#711A27','#711A27','#711A27','#006275','#006275','#006275','#006275','#006275','#006275','#711A27','#006275',
-                  '#711A27','#711A27',
-                  '#006275','#006275','#006275','#711A27','#006275','#006275','#711A27','#711A27','#006275','#006275',
-                  '#711A27','#711A27','#711A27','#711A27',
-                  '#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27','#711A27',
-                  
-
-         ],
+  node: {
+    pad: 9,
+    thickness: 30,
+    line: {
+      color: '#D3D3D380',
+      width: 0.5
+    },
+    label: [
+      'Computer Forensics BAS', 'Computer Information Systems BS', 'Computer Information Technology BS', 'Computer Science BS', 'Computer Science MS', 'Management Information Systems BS','Management Information Systems MMIS',
+      'Internship', 'No Internship',
+      'Arts, Entertainment, and Recreation',	'Finance and Insurance',	'Information and Data',	'Management of Companies and Enterprises',	'Manufacturing',	'Other',	'Professional, Scientific, and Technical Services',	'Telecommunications',
+      'Entry Level', 'First Level<br>Management', 'Intermediate or<br>Experienced Level', 'Middle-Level<br>Management',
+      'Application Developer',	'Application Programmer',	'Business Analyst',	'Compliance Analyst',	'Field Applications Engineer',	'Manager, enterprise<br>customer success',	'Ops manager',	'Retired',	'Senior Consultant',	'Senior Manager',	'Senior Quality Assurance Analyst',	'Senior software engineer',	'Senior Systems Analyst',	'Software Developer',	'Software engineer',	'Software Engineer',	'Software Engineer II',	'Sr. Software Engineer',	'Systems Architect/Solution Architect',
+  
+    ],
+    color: [
+      '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275',
+      '#006275', '#006275', 
+      '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', 
+      '#006275', '#006275', '#006275', '#006275',
+      '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275',
+    ],
     hovertemplate: '<span style="text-transform: none">%{value} %{label} alumni</span> <extra></extra>',
-    },
-    link: {
-      source: [0,1,2,3,4,5,6,7,8,9,10,11,12,
-               0,1,2,3,4,5,6,7,8,9,10,11,12,
-               13,13,13,13,13,13,13,13,13,13,
-               14,14,14,14,14,14,14,14,14,14,
-               15,15,15,15,
-               16,16,16,16,
-               17,17,17,17,
-               18,18,18,18,
-               19,19,19,19,
-               20,20,20,20,
-               21,21,21,21,
-               22,22,22,22,
-               23,23,23,23,
-               24,24,24,24,
-               25,25,25,25,25,25,25,25,25,25,25,
-               25,25,25,25,25,25,25,
-               26,26,26,26,26,26,26,26,26,26,26,
-               26,26,26,26,26,26,26,
-               27,27,27,27,27,27,27,27,27,27,27,
-               27,27,27,27,27,27,27,
-               28,28,28,28,28,28,28,28,28,28,28,
-               28,28,28,28,28,28,28,
-      ],
-      target: [13,13,13,13,13,13,13,13,13,13,13,13,13,
-               14,14,14,14,14,14,14,14,14,14,14,14,14,
-               15,16,17,18,19,20,21,22,23,24,
-               15,16,17,18,19,20,21,22,23,24,
-               25,26,27,28,
-               25,26,27,28,
-               25,26,27,28,
-               25,26,27,28,
-               25,26,27,28,
-               25,26,27,28,
-               25,26,27,28,
-               25,26,27,28,
-               25,26,27,28,
-               25,26,27,28,
-               29,30,31,32,33,34,35,36,37,38,39,
-               40,41,42,43,44,45,46,
-               29,30,31,32,33,34,35,36,37,38,39,
-               40,41,42,43,44,45,46,
-               29,30,31,32,33,34,35,36,37,38,39,
-               40,41,42,43,44,45,46,
-               29,30,31,32,33,34,35,36,37,38,39,
-               40,41,42,43,44,45,46,
-               
-      ],
-value: [
-  0, 0, 1, 1, 4, 0, 1, 0, 0, 0, 0, 0, 1, // 0-12
-  1, 1, 0, 1, 2, 1, 0, 1, 2, 1, 1, 1, 0, // 13-25
-  0, 1, 0, 3, 0, 1, 2, 1, 0, 0,          // 26-35
-  1, 0, 1, 2, 2, 1, 0, 3, 1, 1,          // 36-45
-  0, 0, 1, 0,                            // 46-49
-  0, 0, 1, 0,                            // 50-53
-  0, 0, 1, 0,                            // 54-57
-  2, 1, 2, 1,                            // 58-61
-  0, 1, 1, 0,                            // 62-65
-  1, 0, 1, 0,                            // 66-69
-  0, 0, 2, 0,                            // 70-73
-  0, 0, 4, 0,                            // 74-77
-  0, 0, 1, 0,                            // 78-81
-  0, 0, 1, 0,                            // 82-85
-  0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,    // 86-97
-  0, 0, 1, 0, 0, 0,                      // 98-103
-  0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0,    // 104-115
-  0, 0, 0, 0, 0, 0,                      // 116-121
-  1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1,    // 122-133
-  1, 1, 0, 3, 1, 1,                      // 134-139
-  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,    // 140-151
-  1, 0, 0, 0, 0, 0                       // 152-157
-],
-      // Flow colors
-      color: ['#D3D3D380', '#D3D3D380','#E03C3180','#E03C3180','#E03C3180','#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#E03C3180','#E03C3180','#E03C3180','#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380','#E03C3180','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#E03C3180','#D3D3D380','#D3D3D380','#E03C3180','#E03C3180','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#E03C3180','#D3D3D380','#D3D3D380','#E03C3180','#E03C3180','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#E03C3180','#E03C3180','#E03C3180','#E03C3180',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#E03C3180','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#D3D3D380','#D3D3D380','#D3D3D380','#D3D3D380',
-        '#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180',
-        '#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180',
-        '#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180',
-        '#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180',
-        '#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180',
-        '#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180','#E03C3180',
+  },
+  link: {
+    source: [
+      0, 1, 2, 3, 4, 5, 6,
+      0, 1, 2, 3, 4, 5, 6,
+      7, 7, 7, 7, 7, 7, 7, 7, 
+      8, 8, 8, 8, 8, 8, 8, 8, 
+      9, 9, 9, 9,
+      10, 10, 10, 10,
+      11, 11, 11, 11,
+      12, 12, 12, 12,
+      13, 13, 13, 13,
+      14, 14, 14, 14,
+      15, 15, 15, 15,
+      16, 16, 16, 16,
+      17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+      18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18,
+      19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19,
+      20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
+      
 
-      ],
-      hovertemplate: '<span style="text-transform: none">%{value} %{source.label} alumni went on to %{target.label}</span> <extra></extra>',
-    },
-  };
+    ],
+    target: [
+      7, 7, 7, 7, 7, 7, 7,
+      8, 8, 8, 8, 8, 8, 8,
+      9, 10, 11, 12, 13, 14, 15, 16,
+      9, 10, 11, 12, 13, 14, 15, 16,
+      17, 18, 19, 20,
+      17, 18, 19, 20,
+      17, 18, 19, 20,
+      17, 18, 19, 20,
+      17, 18, 19, 20,
+      17, 18, 19, 20,
+      17, 18, 19, 20,
+      17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+      
+      
+
+      
+    ],
+    value: [
+      1, 1, 2, 5,	0, 1,	1,
+      3, 1, 2, 3, 1, 7, 3,
+      0, 0, 3, 0, 1, 1, 3, 0,
+      2, 1, 4, 2, 1, 1, 0, 1,
+      0, 0, 2, 0,
+      0, 0, 1, 0,
+      2, 0, 4, 2,
+      0, 1, 1, 0,
+      1, 0, 1, 0,
+      0, 0, 1, 1,
+      0, 0, 3, 0,
+      0, 0, 0, 1,
+      1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 2, 1, 0, 1,
+      0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0,
+
+
+
+
+    ],
+    color: [
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",												
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",												
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",											
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",											
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",															
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",															
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",															
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",															
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",															
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",															
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",															
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",															
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",
+      "#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",	"#D3D3D390",
+												
+
+    ],
+    hovertemplate: '<span style="text-transform: none">%{value} %{source.label} alumni<br><span style="font-size:16px">&#8594;</span>%{target.label}</span> <extra></extra>',
+  },
+};
