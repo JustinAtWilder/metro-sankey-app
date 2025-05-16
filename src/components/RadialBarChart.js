@@ -201,6 +201,7 @@ const RadialBarChart = () => {
                 <br />
                 students
               </p>
+
             </div>
           </div>
         </div>
@@ -353,7 +354,7 @@ const RadialBarChart = () => {
                   margin: "0",
                 }}
               >
-                Our students range in
+                Students range in
                 <br />
                 age from 15-85 years.
               </p>
@@ -378,12 +379,34 @@ const RadialBarChart = () => {
               >
                 First-generation
                 <br />
-                student
+                students
               </p>
             </div>
           </div>
         </div>
       </div>
+              <div
+                style={{
+                  display: "flex-wrap",
+                  flexDirection: "row",
+                  fontSize: "0.7rem",
+                  width: "100%",
+                  color: "#999",
+                  textAlign: "left",
+                  margin: "15px 0",
+                  paddingTop: "10px",
+                  paddingLeft: "30px",
+                }}>
+                  <p
+                    style={{
+                      fontSize: "0.7rem",
+                      color: highlightedIndex === 4 ? "#fce040" : "#FCB440",
+                      textAlign: "left",
+                      margin: "15px 0",
+                    }}>
+                    *Pell-eligible students are those who qualify for federal financial aid based on their family's income and other factors.
+                    </p>
+                </div>
     </div>
   );
 };

@@ -126,7 +126,7 @@ const CompetencyCard = ({ competency, isExpanded, onClick }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3}}
-      >
+      >      
         <motion.div
           className={`${styles.competencyCard} ${
             isExpanded ? styles.competencyCardExpanded : ''
@@ -207,6 +207,9 @@ const CareerCompetencies = () => {
           />
         )}
       </AnimatePresence>
+      <h2 className={styles.careerCompetenciesTitle}>
+        Career Competencies
+      </h2>
       
       <motion.div className={styles.competenciesGrid} layout>
         {competenciesData.map((competency) => (

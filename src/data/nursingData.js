@@ -15,14 +15,14 @@ export const nursingData = {
       'Internship', 'No Internship', 'Not sure',
       'Educational Services', 'Health Care and Social Assistance',
       'Entry Level', 'Intermediate<br>or Experienced Level', 'Middle Level Management',
-      'Critical Care<br>Nurse Practitioner', 'Nurse', 'Nurse Anesthetist', 'Nurse Practitioner', 'Psychiatric Nurse Practitioner', 'Psychiatric Provider', 'Public health Nurse', 'Public Health Nurse', 'Registered Nurse', 'Registered Nurse<br>and Clinical Educator',
+      'Critical Care<br>Nurse Practitioner', 'Nurse', 'Nurse Anesthetist', 'Nurse Practitioner', 'Psychiatric Nurse Practitioner', 'Psychiatric Provider', 'Public Health Nurse', 'Registered Nurse', 'Registered Nurse<br>and Clinical Educator',
     ],
     color: [
       '#006275', '#006275', '#006275', '#006275', 
       '#006275', '#006275', '#006275',
       '#006275', '#006275',
       '#006275', '#006275', '#006275',
-      '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275',
+      '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275', '#006275',
  ],
     hovertemplate: '<span style="text-transform: none">%{value} %{label} alumni</span> <extra></extra>',
   },
@@ -36,9 +36,9 @@ export const nursingData = {
       6, 6, 
       7, 7, 7, 
       8, 8, 8,
-      9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 
-      10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 
-      11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 
+      9, 9, 9, 9, 9, 9, 9, 9, 9, 
+      10, 10, 10, 10, 10, 10, 10, 10, 10, 
+      11, 11, 11, 11, 11, 11, 11, 11, 11, 
     ],
     target: [
       4, 4, 4, 4, 
@@ -49,9 +49,9 @@ export const nursingData = {
       7, 8, 
       9, 10, 11, 
       9, 10, 11, 
-      12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-      12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-      12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      12, 13, 14, 15, 16, 17, 18, 19, 20,
+      12, 13, 14, 15, 16, 17, 18, 19, 20,
+      12, 13, 14, 15, 16, 17, 18, 19, 20,
 
 
     ],
@@ -64,9 +64,9 @@ export const nursingData = {
       0, 1, 
       0, 1, 0, 
       2, 15, 3, 
-      0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 
-      1, 1, 1, 0, 1, 0 ,1, 1, 9, 1, 
-      0, 0, 0, 1, 0, 1, 0, 0, 1, 0,   
+      0, 0, 0, 0, 0, 0, 0, 2, 0, 
+      1, 1, 1, 0, 1, 0 ,2, 9, 1, 
+      0, 0, 0, 1, 0, 1, 0, 1, 0,   
 
     ],
     color: [
@@ -78,9 +78,9 @@ export const nursingData = {
         '#D3D3D380', '#D3D3D380',
         '#D3D3D380', '#D3D3D380', '#D3D3D380',
         '#D3D3D380', '#D3D3D380', '#D3D3D380', 
-        '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', 
-        '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', 
-        '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380',  
+        '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380',
+        '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', 
+        '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380', '#D3D3D380',  
         																										
 
     ],

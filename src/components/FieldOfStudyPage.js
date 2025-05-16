@@ -294,7 +294,7 @@ const FieldOfStudyPage = () => {
       search: false,
       sort: true,
       header: {
-        text: "I am satisfied with my degree educational experience.",
+        text: "I am satisfied with my degree and educational experience.",
       },
     },
     loandebtOverwhelm: {
@@ -1887,7 +1887,7 @@ const FieldOfStudyPage = () => {
         >
           <option value="progressSatis">Satisfaction with career so far</option>
           <option value="jobRespon">Level of job responsibility</option>
-          <option value="educExperience">Satisfaction with degree educational experience</option>
+          <option value="educExperience">Satisfaction with degree and educational experience</option>
           <option value="loandebtOverwhelm">Student loan debt overwhelming</option>
           <option value="communityInvolve">Community involvement</option>
           <option value="networkAlumni">Networking with alumni</option>
