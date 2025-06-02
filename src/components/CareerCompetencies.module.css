@@ -13,7 +13,7 @@
 
 .competenciesGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);;
+  grid-template-columns: repeat(3, 1fr);;
   gap: 8px;
   justify-content: center; /* Center the grid horizontally */
   align-content: center; /* Center the grid vertically */
@@ -23,13 +23,13 @@
 /* Media queries for responsive grid layout */
 @media (min-width: 640px) {
   .competenciesGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .competenciesGrid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -44,6 +44,8 @@
   transition: box-shadow 0.3s ease;
   max-width: 200px;
   min-height: 80px;
+  text-align: center;
+  
 }
 
 .competencyCard:hover {
@@ -52,7 +54,7 @@
 
 .competencyCardExpanded {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+ }
 
 
 .competencyTitle {
@@ -65,8 +67,7 @@
 .competencyTooltip {
   padding: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  width: 300px;
+  width: 400px;
   max-width: 90vw;
   max-height: 80vh;
   overflow-y: auto;
@@ -75,11 +76,26 @@
 
 .tooltipContent {
   font-size: 14px;
+  overflow-y: auto;
 }
 
 .tooltipTitle {
   font-weight: 700;
+  font-size: 16px;
   margin-bottom: 8px;
+  text-align: left;
+}
+
+.tooltipDescription {
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.tooltipLeader {
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: left;
 }
 
 .tooltipList {
