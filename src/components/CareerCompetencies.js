@@ -38,7 +38,7 @@ const competenciesData = [
     details: [
       "Describing the situation in need of ethical decision making",
       "Collecting information from multiple perspectives on the situation",
-      "Assess the moral implications of a course of aApplying an ethical model to identify possible actions",
+      "Assess the moral implications of a course of applying an ethical model to identify possible actions",
       "Weighing the possible actions and their consequences",
       "Taking action and evaluating that action",
     ],
