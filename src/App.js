@@ -9,6 +9,7 @@ import EducationSankey from './components/EducationSankey';
 import RadialBarChart from './components/RadialBarChart';
 import CareerCompetencies from './components/CareerCompetencies';
 import FieldOfStudyPage from "./components/FieldOfStudyPage";
+import MNCompassEmbeds from './components/MNCompassEmbeds';
 import "@fontsource/montserrat";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/600.css";
@@ -27,20 +28,23 @@ document.head.appendChild(style);
 function App() {
   return (
     <div className="App">
-          <Router>
-      <Routes>
-        <Route path="/" element={<Sankey />} />
-        <Route path="/nursing" element={<NursingSankey />} />
-        <Route path="/accounting" element={<AccountingSankey />} />
-        <Route path="/cybersecurity" element={<CybersecuritySankey />} />
-        <Route path="/mental-health-practitioner" element={<MentalHealthPractitionerSankey />} />
-        <Route path="/education" element={<EducationSankey />} />
-        <Route path="/radial-bar-chart" element={<RadialBarChart />} />
-        <Route path="/career-competencies" element={<CareerCompetencies />} />
-        <Route path="/tables" element={<FieldOfStudyPage />} />
-
-            </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Sankey />} />
+          <Route path="/nursing" element={<NursingSankey />} />
+          <Route path="/accounting" element={<AccountingSankey />} />
+          <Route path="/cybersecurity" element={<CybersecuritySankey />} />
+          <Route path="/mental-health-practitioner" element={<MentalHealthPractitionerSankey />} />
+          <Route path="/education" element={<EducationSankey />} />
+          <Route path="/radial-bar-chart" element={<RadialBarChart />} />
+          <Route path="/career-competencies" element={<CareerCompetencies />} />
+          <Route path="/tables" element={<FieldOfStudyPage />} />
+          
+          {/* MN Compass embed routes */}
+          <Route path="/mncompass-embed" element={<MNCompassEmbeds />} />
+          <Route path="/mncompass-embed/:itemId" element={<MNCompassEmbeds />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
