@@ -54,7 +54,7 @@ function getCurrentItemId(routeItemId) {
 }
 
 const MNCompassEmbeds = ({
-  width = 800,
+  width = 1200,
   height = 400,
   showDetails = false,
   title = null,
@@ -128,12 +128,12 @@ const MNCompassEmbeds = ({
         let chartWidth = urlWidth ? parseInt(urlWidth) : width;
         if (typeof chartWidth === "string" && chartWidth.includes("%")) {
           const containerWidth =
-            chartContainerRef.current?.parentElement?.clientWidth || 800;
+            chartContainerRef.current?.parentElement?.clientWidth || 1200;
           chartWidth = Math.floor(
             (parseInt(chartWidth) / 100) * containerWidth,
           );
         }
-        chartWidth = Number(chartWidth) || 800;
+        chartWidth = Number(chartWidth) || 1200;
 
         let chartHeight = urlHeight ? parseInt(urlHeight) : height;
         chartHeight = Number(chartHeight) || 400;
