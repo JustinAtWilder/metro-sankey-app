@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #082131;
+  background-color: transparent;
   min-height: 100vh;
   width: auto;
   display: flex;
@@ -38,7 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #082131; /* Dark blue background */
+  background-color: transparent; /* Dark blue background */
   overflow: auto; /* Allow scrolling if content overflows */
   z-index: 1; /* Ensure it is above the background */
 }
@@ -50,7 +50,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: transparent;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
