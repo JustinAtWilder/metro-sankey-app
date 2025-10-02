@@ -10,6 +10,11 @@ import RadialBarChart from './components/RadialBarChart';
 import CareerCompetencies from './components/CareerCompetencies';
 import FieldOfStudyPage from "./components/FieldOfStudyPage";
 import MNCompassEmbeds from './components/MNCompassEmbeds';
+import AccountingChart from './components/AccountingChart';
+import CybersecurityChart from './components/CybersecurityChart';
+import MentalHealthChart from './components/MentalHealthChart';
+import NursingChart from './components/NursingChart';
+import EducationChart from './components/EducationChart';
 import "@fontsource/montserrat";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/600.css";
@@ -39,7 +44,13 @@ function App() {
           <Route path="/radial-bar-chart" element={<RadialBarChart />} />
           <Route path="/career-competencies" element={<CareerCompetencies />} />
           <Route path="/tables" element={<FieldOfStudyPage />} />
-          
+          {/* High need area labor market trend routes */}
+          <Route path="/accounting-trends" element={<AccountingChart />} />
+          <Route path="/cybersecurity-trends" element={<CybersecurityChart />} />
+          <Route path="/mental-health-trends" element={<MentalHealthChart />} />
+          <Route path="/nursing-trends" element={<NursingChart />} />
+          <Route path="/education-trends" element={<EducationChart />} />
+
           {/* MN Compass embed routes */}
           <Route path="/mncompass-embed" element={<MNCompassEmbeds />} />
           <Route path="/mncompass-embed/:itemId" element={<MNCompassEmbeds />} />

@@ -56,7 +56,7 @@ const Table = ({ title, subtitle, columns, data, pagination = true, search = tru
           "font-family": "Arial, sans-serif"
         },
         th: {
-          "background-color": "#D5EBF5",
+          "background-color": "#467f99ff",
           "font-weight": "600",
           "white-space": "pre-wrap"
         }
