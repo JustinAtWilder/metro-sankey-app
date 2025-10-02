@@ -131,27 +131,27 @@ const competenciesData = [
 const CompetencyCard = ({ competency, isExpanded, onClick }) => {
 
   const cardColors = {
-    1: "#12743C", // Medium Green
-    2: "#006275", //Medium Blue      
-    3: "#711A27", // Dark red
-    4: "#E03C31", // Terracotta
-    5: "#C6612D", // Dark orange
-    6: "#78BE20", // Green
-    7: "#F38C1D", //Orange
-    8: "#4D97AD", // Tealish
-    9: "#AF272F", // Medium red
+    1: "#467E9B", // Medium Green
+    2: "#9BBAC4", //Medium Blue
+    3: "#418699ff", // Dark red
+    4: "#367489", // Terracotta
+    5: "#1E566C", // Dark orange
+    6: "#9ABFCA", // Green
+    7: "#5795a7", //Orange
+    8: "#5E91A1", // Tealish
+    9: "#597F92", // Medium red
   };
 
   const tooltipColors = {
-    1: "#12743C", // Medium Green
-    2: "#006275", //Medium Blue
-    3: "#711A27", // Dark red
-    4: "#E03C31", // Terracotta
-    5: "#C6612D", // Dark orange
-    6: "#78BE20", // Green
-    7: "#F38C1D", // Orange
-    8: "#4D97AD", // Tealish
-    9: "#AF272F", // Medium red
+    1: "#467E9B", // Medium Green
+    2: "#9BBAC4", //Medium Blue      
+    3: "#418699ff", // Dark red
+    4: "#367489", // Terracotta
+    5: "#1E566C", // Dark orange
+    6: "#9ABFCA", // Green
+    7: "#5795a7", //Orange
+    8: "#5E91A1", // Tealish
+    9: "#597F92", // Medium red
   };
     return (
       <motion.div
