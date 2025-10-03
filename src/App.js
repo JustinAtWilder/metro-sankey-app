@@ -15,10 +15,12 @@ import CybersecurityChart from './components/CybersecurityChart';
 import MentalHealthChart from './components/MentalHealthChart';
 import NursingChart from './components/NursingChart';
 import EducationChart from './components/EducationChart';
+import TrendGrid from './components/TrendGrid';
 import "@fontsource/montserrat";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
+
 
 // Add a global style for gridjs to use Montserrat
 const style = document.createElement('style');
@@ -44,6 +46,7 @@ function App() {
           <Route path="/radial-bar-chart" element={<RadialBarChart />} />
           <Route path="/career-competencies" element={<CareerCompetencies />} />
           <Route path="/tables" element={<FieldOfStudyPage />} />
+          <Route path="/trend-grid" element={<TrendGrid />} />
           {/* High need area labor market trend routes */}
           <Route path="/accounting-trends" element={<AccountingChart />} />
           <Route path="/cybersecurity-trends" element={<CybersecurityChart />} />
