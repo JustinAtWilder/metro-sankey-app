@@ -131,27 +131,27 @@ const competenciesData = [
 const CompetencyCard = ({ competency, isExpanded, onClick }) => {
 
   const cardColors = {
-    1: "#467E9B", // Medium Green
-    2: "#9BBAC4", //Medium Blue
-    3: "#418699ff", // Dark red
-    4: "#367489", // Terracotta
-    5: "#1E566C", // Dark orange
-    6: "#9ABFCA", // Green
-    7: "#5795a7", //Orange
-    8: "#5E91A1", // Tealish
-    9: "#597F92", // Medium red
+    1: "#00536e", // Professional Communication
+    2: "#00536e", // Collaboration
+    3: "#00536e", // Critical Thinking
+    4: "#00536e", // Equity & Inclusion
+    5: "#00536e", // Information Literacy
+    6: "#00536e", // Self-Management
+    7: "#00536e", // Community Engagement
+    8: "#00536e", // Digital Literacy
+    9: "#00536e", // Career Management
   };
 
   const tooltipColors = {
-    1: "#467E9B", // Medium Green
-    2: "#9BBAC4", //Medium Blue      
-    3: "#418699ff", // Dark red
-    4: "#367489", // Terracotta
-    5: "#1E566C", // Dark orange
-    6: "#9ABFCA", // Green
-    7: "#5795a7", //Orange
-    8: "#5E91A1", // Tealish
-    9: "#597F92", // Medium red
+    1: "#00536e", // Professional Communication
+    2: "#00536e", // Collaboration
+    3: "#00536e", // Critical Thinking
+    4: "#00536e", // Equity & Inclusion
+    5: "#00536e", // Information Literacy
+    6: "#00536e", // Self-Management
+    7: "#00536e", // Community Engagement
+    8: "#00536e", // Digital Literacy
+    9: "#00536e", // Career Management
   };
     return (
       <motion.div

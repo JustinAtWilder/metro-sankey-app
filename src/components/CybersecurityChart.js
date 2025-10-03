@@ -75,6 +75,14 @@ function CybersecurityChart() {
                 callback: function(value) {
                   return value.toLocaleString();
                 }
+              },
+              title: {
+                display: true,
+                text: 'Jobs', // <-- Your y-axis label
+                font: {
+                  size: 14,
+                  weight: 'bold'
+                }
               }
             }
           }
