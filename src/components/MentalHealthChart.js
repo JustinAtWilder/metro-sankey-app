@@ -43,8 +43,8 @@ function MentalHealthChart() {
           labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030'],
           datasets: [{
             data: [3050, 3120, 3190, 3255, 3305, 3359, 3381, 3403, 3425, 3447, 3490, 3512, 3534, 3555, 3565, 3576],
-            borderColor: '#7c3aed',
-            backgroundColor: 'rgba(124, 58, 237, 0.1)',
+            borderColor: '#0087a9',
+            backgroundColor: 'rgba(0, 83, 110, 0.1)',
             borderWidth: 2,
             fill: true,
             tension: 0.3,

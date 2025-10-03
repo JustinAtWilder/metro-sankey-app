@@ -43,8 +43,8 @@ function CybersecurityChart() {
           labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030'],
           datasets: [{
             data: [2100, 2250, 2400, 2550, 2730, 2913, 3075, 3237, 3399, 3561, 3651, 3680, 3700, 3710, 3720, 3729],
-            borderColor: '#dc2626',
-            backgroundColor: 'rgba(220, 38, 38, 0.1)',
+            borderColor: '#0087a9',
+            backgroundColor: 'rgba(0, 83, 110, 0.1)',
             borderWidth: 2,
             fill: true,
             tension: 0.3,
