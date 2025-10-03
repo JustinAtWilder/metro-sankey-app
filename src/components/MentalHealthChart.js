@@ -42,9 +42,9 @@ function MentalHealthChart() {
         data: {
           labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030'],
           datasets: [{
-            data: [3050, 3120, 3190, 3255, 3305, 3359, 3381, 3403, 3425, 3447, 3490, 3512, 3534, 3555, 3565, 3576],
-            borderColor: '#0087a9',
-            backgroundColor: 'rgba(0, 83, 110, 0.1)',
+            data: [20478, 20656, 20835, 21014, 21192, 21371, 21550, 21728, 21907, 22086, 22265, 22443, 22622, 22801, 22979, 23158],
+            borderColor: '#7c3aed',
+            backgroundColor: 'rgba(124, 58, 237, 0.1)',
             borderWidth: 2,
             fill: true,
             tension: 0.3,
@@ -78,7 +78,7 @@ function MentalHealthChart() {
               },
               title: {
                 display: true,
-                text: 'Jobs', // <-- Your y-axis label
+                text: 'Jobs',
                 font: {
                   size: 14,
                   weight: 'bold'
@@ -102,20 +102,20 @@ function MentalHealthChart() {
     <div className={styles.container}>
       <div className={styles.chartContainer}>
         <div className={styles.chartTitle}>Mental Health</div>
-        <div className={styles.chartSubtitle}>Mental Health and Substance Abuse Social Workers</div>
+        <div className={styles.chartSubtitle}>CIP 44.00, 42.01, 44.07 - Social Workers, Counselors, and Psychologists</div>
         <canvas ref={chartRef}></canvas>
         <div className={styles.stats}>
           <div className={styles.stat}>
             <div className={styles.statLabel}>2020-2030 Growth</div>
-            <div className={styles.statValue}>+6.5%</div>
+            <div className={styles.statValue}>+8.4%</div>
           </div>
           <div className={styles.stat}>
             <div className={styles.statLabel}>Annual Openings</div>
-            <div className={styles.statValue}>~151</div>
+            <div className={styles.statValue}>~901</div>
           </div>
           <div className={styles.stat}>
-            <div className={styles.statLabel}>Median Wage</div>
-            <div className={styles.statValue}>$32.31/hr</div>
+            <div className={styles.statLabel}>Weighted Avg Wage</div>
+            <div className={styles.statValue}>$32.54/hr</div>
           </div>
         </div>
       </div>

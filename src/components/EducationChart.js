@@ -42,9 +42,9 @@ function EducationChart() {
         data: {
           labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030'],
           datasets: [{
-            data: [23500, 23700, 23900, 24050, 24220, 24393, 24485, 24577, 24669, 24761, 24946, 25038, 25131, 25223, 25270, 25317],
-            borderColor: '#0087a9',
-            backgroundColor: 'rgba(0, 83, 110, 0.1)',
+            data: [83392, 83811, 84231, 84651, 85071, 85491, 85911, 86331, 86751, 87171, 87591, 88010, 88430, 88850, 89270, 89690],
+            borderColor: '#ea580c',
+            backgroundColor: 'rgba(234, 88, 12, 0.1)',
             borderWidth: 2,
             fill: true,
             tension: 0.3,
@@ -78,7 +78,7 @@ function EducationChart() {
               },
               title: {
                 display: true,
-                text: 'Jobs', // <-- Your y-axis label
+                text: 'Jobs',
                 font: {
                   size: 14,
                   weight: 'bold'
@@ -102,16 +102,16 @@ function EducationChart() {
     <div className={styles.container}>
       <div className={styles.chartContainer}>
         <div className={styles.chartTitle}>Education</div>
-        <div className={styles.chartSubtitle}>Elementary School Teachers (Except Special Education)</div>
+        <div className={styles.chartSubtitle}>CIP 13.10-13.14 - Teachers, Administrators, and Counselors</div>
         <canvas ref={chartRef}></canvas>
         <div className={styles.stats}>
           <div className={styles.stat}>
             <div className={styles.statLabel}>2020-2030 Growth</div>
-            <div className={styles.statValue}>+3.8%</div>
+            <div className={styles.statValue}>+4.9%</div>
           </div>
           <div className={styles.stat}>
             <div className={styles.statLabel}>Annual Openings</div>
-            <div className={styles.statValue}>~927</div>
+            <div className={styles.statValue}>~3,397</div>
           </div>
           <div className={styles.stat}>
             <div className={styles.statLabel}>Median Wage</div>

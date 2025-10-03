@@ -42,7 +42,7 @@ function AccountingChart() {
         data: {
           labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030'],
           datasets: [{
-            data: [30200, 30500, 30800, 31100, 31600, 32077, 32436, 32795, 33154, 33513, 33872, 34077, 34282, 34487, 34682, 33877],
+            data: [62656, 62699, 62742, 62784, 62827, 62870, 62913, 62956, 62998, 63041, 63084, 63127, 63170, 63212, 63255, 63298],
             borderColor: '#0087a9',
             backgroundColor: 'rgba(0, 83, 110, 0.1)',
             borderWidth: 2,
@@ -78,7 +78,7 @@ function AccountingChart() {
               },
               title: {
                 display: true,
-                text: 'Jobs', // <-- Your y-axis label
+                text: 'Jobs',
                 font: {
                   size: 14,
                   weight: 'bold'
@@ -102,20 +102,20 @@ function AccountingChart() {
     <div className={styles.container}>
       <div className={styles.chartContainer}>
         <div className={styles.chartTitle}>Accounting</div>
-        <div className={styles.chartSubtitle}>Accountants and Auditors</div>
+        <div className={styles.chartSubtitle}>CIP 52.03 - Accountants, Auditors, and Bookkeeping Clerks</div>
         <canvas ref={chartRef}></canvas>
         <div className={styles.stats}>
           <div className={styles.stat}>
             <div className={styles.statLabel}>2020-2030 Growth</div>
-            <div className={styles.statValue}>+5.6%</div>
+            <div className={styles.statValue}>+0.7%</div>
           </div>
           <div className={styles.stat}>
             <div className={styles.statLabel}>Annual Openings</div>
-            <div className={styles.statValue}>~1,200</div>
+            <div className={styles.statValue}>~3,013</div>
           </div>
           <div className={styles.stat}>
-            <div className={styles.statLabel}>Median Wage</div>
-            <div className={styles.statValue}>$37.36/hr</div>
+            <div className={styles.statLabel}>Weighted Avg Wage</div>
+            <div className={styles.statValue}>$30.64/hr</div>
           </div>
         </div>
       </div>
