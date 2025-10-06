@@ -20,6 +20,7 @@ import "@fontsource/montserrat";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
+import DatawrapperTable from './components/DatawrapperTable';
 
 
 // Add a global style for gridjs to use Montserrat
@@ -57,6 +58,7 @@ function App() {
           {/* MN Compass embed routes */}
           <Route path="/mncompass-embed" element={<MNCompassEmbeds />} />
           <Route path="/mncompass-embed/:itemId" element={<MNCompassEmbeds />} />
+          <Route path="/high-needs-occupations" element={<DatawrapperTable src="https://datawrapper.dwcdn.net/D3F3P/1/" />} />
         </Routes>
       </Router>
     </div>
