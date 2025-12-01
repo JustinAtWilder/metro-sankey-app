@@ -11,7 +11,9 @@ const DatawrapperTable = ({ src, title = "Datawrapper Table" }) => (
       width: "100%",
       height: "500px",
       borderRadius: "8px",
-      background: "#fff"
+      background: "#fff",
+      transform: "scale(0.89)",
+      transformOrigin: "top left",
     }}
     data-external="1"
     allowFullScreen
